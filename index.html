@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link charset="UTF-8">
+		<meta name="Bill Hoang" content="profile page">
+		<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">		
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+    	<link rel="stylesheet" type= "text/css" href="css/animate.css">
+    	<link rel="stylesheet" href="css/bootstrap.css">
+		<title>Create your profile</title>
+	</head>
+	<body>
+		
+		<div class="container">
+
+			<div id="newProfile" class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
+				<h1>Create New Profile</h1>
+				<!-- new profile -->
+				<form>
+					<!-- Name -->
+					<div class="form-group">
+						<input type="text" id="userfname" class="form-control" placeholder="First Name">
+						<input type="text" id="userlname" class="form-control" placeholder="Last Name">
+					</div>
+					<!-- Gender -->
+					<div class="form-group">
+						Gender:
+						<label class="radio-inline">
+							<input type="radio" name="radio1" class="userGender" value="male"> Male
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="radio1" class="userGender" value="female"> Female
+						</label>
+					</div>
+					<!--Email-->
+					<div class="form-group">
+						<input type="email" id="userEmail" class="form-control" placeholder="Email Address">
+					</div>
+					<!-- Phone Number -->
+					<div class="form-group">
+						<input type="number" id="userPhone" class="form-control" placeholder="Phone Number">
+					</div>
+					<!-- Favorite Primaery color -->
+					<div class="form-group">
+						<select class="form-control">
+							<option value=""       class="userColor">Select your favorite Primary color</option>
+							<option value="Red"    class="userColor">Red</option>
+							<option value="Green"  class="userColor">Green</option>
+							<option value="Blue"   class="userColor">Blue</option>
+						</select>
+					</div>
+					<!-- Continent of Birth -->
+					<div class="form-group">
+						Continent of Birth:
+						<br>
+						<label class="radio-inline">
+							<input type="radio" name="radio2" class="userBirth" value="Africa"> Africa
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="radio2" class="userBirth" value="Asia"> Asia
+						</label>
+					    <label class="radio-inline">
+					    	<input type="radio" name="radio2" class="userBirth" value="Australia"> Australia
+					    </label>
+					    <label class="radio-inline">
+					    	<input type="radio" name="radio2" class="userBirth" value="Europe"> Europe
+					    </label>
+					    <label class="radio-inline">
+					    	<input type="radio" name="radio2" class="userBirth" value="North America"> North America
+					    </label>
+					    <label class="radio-inline">
+					    	<input type="radio" name="radio2" class="userBirth" value="South America"> South America
+					    </label>
+					</div>
+					<button id="sendDataButton" type="button" class="btn btn-default">Continue</button>
+
+					<div id="results"></div>
+				</form>
+
+			</div><!-- /.col-sm-6 -->
+
+			<div id="updatedProfile" class="col-sm-6 col-sm-offset-3">
+				<h1>User Profile</h1>
+				<!-- Updated Profile -->
+				<div>
+					<h2 id='newUserName'></h2>
+					<h3 id="newUserGender"></h3>
+					<h3 id="newUserEmail"></h3>
+					<h3 id="newUserPhone"></h3>
+					<h3 id="newUserColor"></h3>
+					<h3 id="newUserBirth"></h3>
+				</div><!-- /#updatedProfile -->
+
+			</div><!-- /.col-sm-6 -->
+
+		</div><!-- /.container -->
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
+
